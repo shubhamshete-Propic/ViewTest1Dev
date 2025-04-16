@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://phoenixpopupudevst.z8.web.core.windows.net/style.css" />
+    <script src="https://phoenixpopupudevst.z8.web.core.windows.net/aiconcierge.js"></script>
+      <script>
+        if (window.Assistant) {
+          let assistant = new Assistant({
+            target: "target-chat-id",
+            apiKey: "3703cff6-58d1-4164-9f0b-95f5e969af9f",
+            productId: "random-id",
+            chatBotType: "SalesConcierge"
+          });
+           window.onload = function() {assistant.init();}
+        }
+        if (window.dispatcher) {
+          dispatcher.on("bot-ready", (e) => {
+            console.log(e.detail);
+          });
+        }
+      </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Test Dev Popup</title>
+</head>
+<body>
+    <h1>View Test Dev Popup</h1>
+</body>
+</html>
